@@ -1,7 +1,7 @@
-Feature: Google Search
+Feature: Search
 	
 
-Scenario: Search in Google
+Scenario: Google
 	Given on google search page
 	When enter "Gamesys" into search field
 	And click on search button
