@@ -76,7 +76,7 @@ public class GoogleSearch {
 		 @Then("verify first link text \"([^\"]*)\"")
 	      public void verify_first_link_text(String text)
 	     {
-	       WebElement message = driver.findElement(By.xpath("//*[@id='rso']/li[1]/div/h3/a"));
+	       WebElement message = driver.findElement(By.linkText(text));
 	       Assert.assertTrue(message.getText().contains(text));
 	      }    
 
