@@ -54,7 +54,7 @@ public class GoogleSearch {
 	  @AfterMethod
 	  public void tearDown() throws Exception {
 		  
-		  Thread.sleep(10000);
+		  //Thread.sleep(10000);
 		  //closing the driver
 		  driver.quit();
 	  }
