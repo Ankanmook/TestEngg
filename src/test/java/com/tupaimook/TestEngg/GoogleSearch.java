@@ -2,7 +2,7 @@
  * Class: GoogleSearch
  * Author: Ankan Mookherjee
  * Version: 1.0
- * Date 1/8/2015
+ * Date 1/9/2015
  * 
  */
 
@@ -14,8 +14,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.AfterMethod;
 import org.junit.Assert;
 
 import cucumber.api.java.en.Given;
@@ -31,7 +31,7 @@ public class GoogleSearch {
 	  /**
 	   * Sets up class
 	   */
-	  @BeforeMethod
+	  @Before
 	  public void setUp() throws Exception {
 		  
 		  //loading the firefox driver
@@ -51,7 +51,7 @@ public class GoogleSearch {
 	  /**
 	   * Tear down class
 	   */
-	  @AfterMethod
+	  @After
 	  public void tearDown() throws Exception {
 		  
 		  //Thread.sleep(10000);
